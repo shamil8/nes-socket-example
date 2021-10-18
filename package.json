@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@hapi/hapi": "^20.2.1",
     "@hapi/nes": "^12.0.4"
   }
 }

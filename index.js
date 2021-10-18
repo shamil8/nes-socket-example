@@ -1,4 +1,5 @@
 const Nes = require('@hapi/nes');
+
 const wsEvents = { // socketEvents
     state: '/FUNDRAISE_STATE',
     swapped: '/FUNDRAISE_SWAPPED',
@@ -6,9 +7,9 @@ const wsEvents = { // socketEvents
     token: '/STAKING_TOKEN',
 };
 
-// const client = new Nes.Client('wss://staging-samurai.cyberfi.tech/api');
 // const client = new Nes.Client('wss://develop-samurai.cyberfi.tech/api');
-const client = new Nes.Client('ws://192.168.88.67:8080');
+const client = new Nes.Client('ws://localhost:8001');
+
 const start = async () => {
     await client.connect();
 
